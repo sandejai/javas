@@ -1,4 +1,5 @@
-package interview;
+package mathematics;
+
 
 public class LargestPalindrome {
 
@@ -14,7 +15,7 @@ public class LargestPalindrome {
 	 */
 	public static void main(String[] args) {
 
-		String puzzleString = "abshsbsbabcba";
+		String puzzleString = "aaa";
 		LargestPalindrome palindromeObj = new LargestPalindrome();
 		
 		System.out.println("Largest palindrome in " + puzzleString + " is " 
@@ -26,12 +27,12 @@ public class LargestPalindrome {
 		String largestPalindrome = "";
 		String newLargestPalindrome;
 		int size = puzzleString.length();
-		int pivot;
+		
 		int sizeOfLargestPalindrome = 0;
 		int newSizeOfLargestPalindrome;
 		boolean found = false;
 		
-		for(pivot = 1; pivot<size-1; pivot++){
+		for(int pivot = 1; pivot < size-1; pivot++){
 			int previousIndex = pivot - 1;
 			int nextIndex = pivot + 1;
 			
@@ -43,7 +44,7 @@ public class LargestPalindrome {
 				
 				previousIndex--;
 				nextIndex++;
-				if((previousIndex>=0) && (nextIndex<size)){
+				if((previousIndex>=0) && (nextIndex < size)){
 					previousChar = puzzleString.charAt(previousIndex);
 					nextChar = puzzleString.charAt(nextIndex);
 					continue;
