@@ -1,7 +1,7 @@
 package mathematics;
 
 
-public class LargestPalindrome {
+public class LargestPalindrome  {
 
 	/**
 	 * The logic is pretty simple. Start from 2nd char and take it as pivot.
